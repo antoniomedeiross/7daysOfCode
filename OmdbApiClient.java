@@ -7,8 +7,8 @@ import java.net.http.HttpRequest;
 import java.net.http.HttpResponse;
 import java.io.IOException;
 
-public class ConsumindoAPI {
-  
+public class OmdbApiClient {
+
   public static String main(String[] args) {
     //String url = "http://www.omdbapi.com/?i=tt3896198&apikey=8a7f14be";
 

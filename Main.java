@@ -7,15 +7,14 @@ import java.util.List;
 
     public static void main(String[] args) {
         Main day2 = new Main(); 
-        String response = ConsumindoAPI.main(args);
-
+        String response = OmdbApiClient.main(args);
+  
         day2.initializeListMovies(response);
-
         List<Movie> movies = day2.getListMovies(); 
-        day2.listarList(movies); // Exibe os filmes no console.
+        day2.listarList(movies); // testes comentar !!!
 
-        HTMLGenerator geradorHtml = new HTMLGenerator(movies); // Gera o HTML com a lista de filmes.
-        geradorHtml.generate(); // Salva o HTML em um arquivo.
+        HTMLGenerator geradorHtml = new HTMLGenerator(movies); 
+        geradorHtml.generate(); 
     }
 
 
@@ -52,7 +51,7 @@ import java.util.List;
 }
 
 
-
+// HTML 
 /*
 <body class="bg-dark">
 
