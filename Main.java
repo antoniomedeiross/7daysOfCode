@@ -1,4 +1,6 @@
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 import java.util.List;
 
 
@@ -12,6 +14,9 @@ import java.util.List;
         day2.initializeListMovies(response);
         List<Movie> movies = day2.getListMovies(); 
         day2.listarList(movies); // testes comentar !!!
+
+        Collections.sort(day2.getListMovies());
+        Collections.sort(movies, Comparator.reverseOrder());
 
         HTMLGenerator geradorHtml = new HTMLGenerator(movies); 
         geradorHtml.generate(); 
@@ -37,6 +42,7 @@ import java.util.List;
   public List<Movie> getListMovies() {
     return listMovies;
   }
+
 
   // testes
   public void listarList(List<Movie> lista) {

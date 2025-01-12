@@ -1,6 +1,6 @@
 // DAY 3
 
-public class Movie implements Content/*(String title, String url, String note, String year)*/ {
+public class Movie implements Content, Comparable<Content> {
   private String title;
   private String url;
   private String note;
@@ -31,6 +31,11 @@ public class Movie implements Content/*(String title, String url, String note, S
   @Override 
   public String year() {
     return year;
+  }
+  
+  @Override
+  public int compareTo(Content outro) {
+    return this.note().compareTo(outro.note());
   }
 }
 
