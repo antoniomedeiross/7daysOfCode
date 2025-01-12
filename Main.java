@@ -13,7 +13,7 @@ import java.util.List;
   
         day2.initializeListMovies(response);
         List<Movie> movies = day2.getListMovies(); 
-        day2.listarList(movies); // testes comentar !!!
+        //day2.listarList(movies); // testes comentar !!!
 
         Collections.sort(day2.getListMovies());
         Collections.sort(movies, Comparator.reverseOrder());
@@ -33,8 +33,7 @@ import java.util.List;
       String url = films[i].substring(films[i].indexOf("poster_path\":") + 15, films[i].indexOf("\",\"release_date"));
       String nota = films[i].substring(films[i].indexOf("vote_average\":") + 14, films[i].indexOf(",\"vote_count"));
       String year = films[i].substring(films[i].indexOf("release_date\":") + 15, films[i].indexOf("\",\"title"));
-
-      //listMovies[i] = new Movie(title, url, nota, year); 
+      // listMovies[i] = new Movie(title, url, nota, year); 
       listMovies.add(new Movie(title, url, nota, year));
     }
   }
@@ -42,7 +41,6 @@ import java.util.List;
   public List<Movie> getListMovies() {
     return listMovies;
   }
-
 
   // testes
   public void listarList(List<Movie> lista) {
