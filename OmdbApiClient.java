@@ -10,10 +10,9 @@ import java.io.IOException;
 public class OmdbApiClient {
 
   public static String main(String[] args) {
-    //String url = "http://www.omdbapi.com/?i=tt3896198&apikey=8a7f14be";
 
     String url = "https://api.themoviedb.org/3/movie/popular";
-    String bearToken = "Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiI5MGRhZWNmMTc4MmNiOTAwOTRhZjU2YmNiNjNhYjJmZiIsIm5iZiI6MTczNjE4NDAxMS4yNTEwMDAyLCJzdWIiOiI2NzdjMTBjYjhmZDZmNTEwOWQ3MmUzOWIiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.kOldn8DQCqyDYpLYebfsr10k4DjZwPVHsqJvJY47R4Q";
+    String bearToken = "SEU TOKEN";
 
     return consome(url, bearToken);
   }
